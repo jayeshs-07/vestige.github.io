@@ -3,141 +3,31 @@ body{
     background-color: #49b0ff;
     background-size: cover;
 }
-/* .card_section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+.card{
+  display: flex;
+  position: relative;
+  width: 50%;
+  padding: 20px;
 }
-ul{
-    display: flex;
-    position: relative;
+.card span{
+  font-size: 12px;
 }
-ul li{
-    list-style: none;
+.card_img{
+  display: inline-block;
+  position: relative;
+  width: 30%;
+  height: 100px;
+  border-radius: 25px;
+  transition: 0.5s;
 }
-.menu {
-    background-color: #13518b;
-    overflow: auto;
-    white-space: nowrap;
-    bottom: 0;
-    position: sticky;
-    width: 100%;
-    padding: 6px;
-    height: 65px;
-    overflow-y: hidden;
-  }
-  
-  .menu a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    margin-left: 16px;
-  }
-  
-  .menu > li :hover{
-    background-color: #efefef;
-
-  }
-.menu a:hover {
-    background-color: #e6f1fc30;
-  }
-.card_product{
-        display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
+.card_img:hover{
+  box-shadow: 0px 0px 9px 0px #000000f2;
 }
-
-.card-title{
-    border-bottom: #fa1717;
+.btn1{
+  background-color: black;
+  color: white;
+  border-radius: 5px;
 }
-.btn-buy{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.card {
-    width: 350px;
-    background-color: #efefef;
-    border: none;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-.image{
-    padding: 30px;
-}
-.image img {
-    transition: all 0.5s
-}
-
-
-
-.btn {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%
-}
-
-.name {
-    font-size: 22px;
-    font-weight: bold
-}
-
-.idd {
-    font-size: 14px;
-    font-weight: 600
-}
-
-.idd1 {
-    font-size: 12px
-}
-
-.number {
-    font-size: 22px;
-    font-weight: bold
-}
-
-.follow {
-    font-size: 12px;
-    font-weight: 500;
-    color: #444444
-}
-
-.btn1 {
-    height: 40px;
-    width: 150px;
-    border: none;
-    background-color: #000;
-    color: #aeaeae;
-    font-size: 15px
-}
-
-.text span {
-    font-size: 13px;
-    color: #545454;
-    font-weight: 500
-}
-
-.icons i {
-    font-size: 19px
-}
-
-hr .new1 {
-    border: 1px solid
-}
-
-.join {
-    font-size: 14px;
-    color: #a0a0a0;
-    font-weight: bold
-}
-
-.date {
-    background-color: #ccc
-} */
 
 /* navigation menu */
 
@@ -153,7 +43,7 @@ hr .new1 {
   }
   .navigation ul {
     display: flex;
-   
+    max-width: 100%;
   }
   .navigation ul li {
     position: relative;
