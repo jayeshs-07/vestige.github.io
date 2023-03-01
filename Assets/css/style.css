@@ -7,14 +7,22 @@ body{
   border-bottom: 2px solid #983423;
 }
 .card_link{
-  color: #983423;
+  color: #fff;
  text-decoration: none;
+ background-color: #983423;
+ padding: 10px;
+ border-radius: 5px;
+}
+.card_link:hover{
+  background-color: #2b2b2b;
+  color: white;
 }
 .card{
   display: flex;
   position: relative;
   width: 50%;
   padding: 20px;
+  box-shadow: 0 1px 19px 0px rgb(0 19 34 / 28%);
 }
 .card span{
   font-size: 12px;
@@ -104,10 +112,12 @@ body{
 .image img {
   transition: all 0.5s
 }
+.card_inner{
+  background-color: #ff634736;
+  border-radius: 5px;
+}
 .btn {
-  height: 140px;
-  width: 140px;
-  border-radius: 50%
+  width: 100%;
 }
 .name {
   font-size: 22px;
@@ -143,19 +153,22 @@ body{
   font-weight: 500
 }
 .icons i {
-  font-size: 19px
+  font-size: 25px
 }
 hr .new1 {
   border: 1px solid
 }
 .join {
   font-size: 14px;
-  color: #a0a0a0;
+  color: #ffffff;
   font-weight: bold
 }
 .date {
-  background-color: #ccc
+  background-color: #983423;
 } 
+
+/* slider card */
+
 @media only screen and (max-width: 600px){
   .menu ul{
     display: flex;
