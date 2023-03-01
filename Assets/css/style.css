@@ -3,6 +3,13 @@ body{
     background-color: #49b0ff;
     background-size: cover;
 }
+.about_title{
+  border-bottom: 2px solid #983423;
+}
+.card_link{
+  color: #983423;
+ text-decoration: none;
+}
 .card{
   display: flex;
   position: relative;
@@ -14,11 +21,11 @@ body{
 }
 .card_img{
   display: inline-block;
-  position: relative;
-  width: 30%;
-  height: 100px;
-  border-radius: 25px;
-  transition: 0.5s;
+    position: relative;
+    width: 50%;
+    height: 125px;
+    border-radius: 25px;
+    transition: 0.5s;
 }
 .card_img:hover{
   box-shadow: 0px 0px 9px 0px #000000f2;
@@ -31,39 +38,44 @@ body{
 
 /* navigation menu */
 
-ul{
-  display: flex;
-  position: relative;
-}
-ul li{
-  list-style: none;
-}
-.menu {
-  background-color: #13518b;
-  overflow: auto;
-  white-space: nowrap;
-  bottom: 0;
-  position: sticky;
+
+
+.menu{
+  position: fixed;
+  bottom: 0px;
+  background: #f4f4f4;
   width: 100%;
-  padding: 6px;
-  height: 65px;
-  overflow-y: hidden;
-}
-
-.menu a {
-  display: inline-block;
-  color: white;
   text-align: center;
+  min-height: 50px;
+  background-color: #13518b;
+}
+.menu ul{
+  list-style-type: none;
+    padding-top: 8px;
+    overflow: auto;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    display: block;
+    
+}
+.menu ul li{
+  display: inline-block;
+    text-align: center;
+    padding: 0px 5px;
+    max-width: 80px;
+}
+.menu ul li a{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #FFF;
   text-decoration: none;
-  margin-left: 16px;
+}
+.menu  li:hover{
+  background-color: #efefef0f;
+  font-size: 17px;
 }
 
-.menu > li :hover{
-  background-color: #efefef;
-}
-.menu a:hover {
-  background-color: #e6f1fc30;
-}
 .card_product{
       display: flex;
   flex-direction: column;
@@ -144,3 +156,13 @@ hr .new1 {
 .date {
   background-color: #ccc
 } 
+@media only screen and (max-width: 600px){
+  .menu ul{
+    display: flex;
+  }
+}
+@media only screen and (min-width: 600px) and (max-width:800px){
+  .menu ul {
+    display: flex;
+  }
+}
